@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import "daisyui/dist/daisyui.css";
+
+@layer components {
+  .kflex {
+    @apply flex items-center justify-between gap-5;
+  }
+}
+
+header {
+  background-image: url(https://res.cloudinary.com/duxfzk6uy/image/upload/v1682345510/Kanoms/Image_m088ug.png);
+}
