@@ -5,7 +5,7 @@
 
 @layer components {
   .kflex {
-    @apply flex items-center justify-between gap-5;
+    @apply grid grid-cols-3 items-center;
   }
 }
 
