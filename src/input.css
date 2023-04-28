@@ -9,6 +9,21 @@
   }
 }
 
+@font-face {
+  font-family: dmsans;
+  src: url(/fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: dmsansmd;
+  src: url(/fonts/DMSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: dmsansbold;
+  src: url(/fonts/DMSans-Bold.ttf);
+}
+
 header {
-  background-image: url(https://res.cloudinary.com/duxfzk6uy/image/upload/v1682345510/Kanoms/Image_m088ug.png);
+  background-image: url(/img/Image.png);
 }

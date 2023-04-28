@@ -12,7 +12,9 @@ module.exports = {
         lred: "#EA3223",
       },
       fontFamily: {
-        dmSans: ["DM Sans", "sans-serif"],
+        dmsans: "dmsans",
+        dmsansmd: "dmsansmd",
+        dmsansbold: "dmsansbold",
       },
     },
   },

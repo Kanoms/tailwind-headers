@@ -13,10 +13,10 @@
   </head>
   <body>
     <header
-      class="bg-lBlue h-[100vh] w-[100vw] grid text-center items-center px-8 lg:py-0 lg:px-28 bg-cover bg-center bg-no-repeat text-white font-dmSans"
+      class="bg-lBlue h-[100vh] w-[100vw] grid text-center items-center px-8 lg:py-0 lg:px-28 bg-cover bg-center bg-no-repeat text-white font-dmsansmd"
     >
-      <nav class="kflex">
-        <div class="">
+      <nav class="flex justify-between items-center md:kflex">
+        <div class="hidden lg:flex">
           <ul class="flex gap-8 text-lg">
             <li>Community</li>
             <li>Pricing</li>
@@ -24,17 +24,57 @@
           </ul>
         </div>
 
-        <div class="text-2xl">Startup 3</div>
+        <div class="dropdown lg:hidden text-left text-white">
+          <label tabindex="0" class="btn m-1 bg-inherit border-none"
+            ><i class="fa-solid fa-bars text-white text-lg"></i
+          ></label>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 px-4 flex flex-col gap-3 md:hidden"
+          >
+            <li>
+              <a
+                ><button class="px-4 py-2 bg-lGreen rounded-3xl">
+                  Login
+                </button></a
+              >
+            </li>
+            <li>
+              <a
+                ><button class="px-4 py-2 bg-lGreen rounded-3xl">
+                  Sign Up
+                </button></a
+              >
+            </li>
+            <li class="px-4 text-lg">Community</li>
+            <li class="px-4 text-lg">Pricing</li>
+            <li class="px-4 text-lg">Products</li>
+          </ul>
+          <ul
+            tabindex="0"
+            class="hidden md:flex dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 px-4 md:flex-col gap-3"
+          >
+            <li class="px-4 text-lg">Community</li>
+            <li class="px-4 text-lg">Pricing</li>
+            <li class="px-4 text-lg">Products</li>
+          </ul>
+        </div>
+
+        <div class="text-2xl font-dmsansbold">Startup 3</div>
 
         <div class="flex place-content-end gap-8 text-lg">
-          <button>Login</button>
+          <button class="hidden md:block">Login</button>
 
-          <button class="px-4 py-2 bg-lGreen rounded-3xl">Sign Up</button>
+          <button class="hidden md:flex px-4 py-2 bg-lGreen rounded-3xl">
+            Sign Up
+          </button>
         </div>
       </nav>
 
       <div class="hero">
-        <h1 class="text-6xl text-center w-[57.5vw]">
+        <h1
+          class="text-3xl sm:text-4xl md:text-6xl lg:text-6xl text-center lg:w-[57.5vw] font-dmsansbold"
+        >
           A high-quality solution for those who want a beautiful startup website
           quickly
         </h1>
@@ -46,8 +86,10 @@
         </button>
       </div>
 
-      <div class="w-[33%] mx-auto">
-        <h2 class="text-lg text-center py-14">
+      <div class="md:w-[50%] xl:w-[33%] mx-auto">
+        <h2
+          class="text-sm sm:text-base md:text-lg md:mx-auto lg:text-lg text-center py-14"
+        >
           We made it so beutiful and simple. It combines landings, pages, blogs
           and shop screens. It is definitely the tool you need in your
           collection!
