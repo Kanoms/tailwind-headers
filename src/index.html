@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/input.css" />
 
     <!-- FONT AWESOME ICONS -->
     <link
@@ -13,6 +14,9 @@
   </head>
   <body>
     <header
+      style="
+        background-image: url(https://res.cloudinary.com/duxfzk6uy/image/upload/v1682345510/Kanoms/Image_m088ug.png);
+      "
       class="bg-lBlue h-[100vh] w-[100vw] grid text-center items-center px-8 lg:py-0 lg:px-28 bg-cover bg-center bg-no-repeat text-white font-dmsansmd"
     >
       <nav class="flex justify-between items-center md:kflex">
@@ -24,10 +28,10 @@
           </ul>
         </div>
 
-        <div class="dropdown lg:hidden text-left text-white">
-          <label tabindex="0" class="btn m-1 bg-inherit border-none"
-            ><i class="fa-solid fa-bars text-white text-lg"></i
-          ></label>
+        <details class="dropdown lg:hidden text-left text-white">
+          <summary tabindex="0" class="btn m-1 bg-inherit border-none">
+            <i class="fa-solid fa-bars text-white text-lg"></i>
+          </summary>
           <ul
             tabindex="0"
             class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 px-4 flex flex-col gap-3 md:hidden"
@@ -58,7 +62,7 @@
             <li class="px-4 text-lg">Pricing</li>
             <li class="px-4 text-lg">Products</li>
           </ul>
-        </div>
+        </details>
 
         <div class="text-2xl font-dmsansbold">Startup 3</div>
 
